@@ -73,6 +73,7 @@ Read the target file(s) completely before changing anything. Understand why each
 - **Preserve structure.** Follow the conventions already in the file. If capabilities use "What Success Looks Like" sections, new capabilities should too.
 - **Hold the canon.** Every new or reworked line meets the canon's tests; don't add procedural detail the persona and outcome already imply.
 - **Update cross-references.** If you renamed a capability, check SKILL.md routing, CAPABILITIES-template, and any references between capability prompts.
+- **Log the why.** Append each decision with its reason to `{target-agent-path}/CHANGELOG.md` as one typed bullet (decision, direction, assumption, gap, note, or event) under a `## YYYY-MM-DD` heading for today, newest day first, creating the file with a `# Changelog` title if the agent has none. Edits otherwise leave only a diff, and the next session cannot tell a deliberate choice from drift.
 
 For memory agents with live sanctums: confirm with the user whether to edit the templates (affects future init), the live sanctum files (affects current sessions), or both.
 

@@ -1,6 +1,6 @@
 # Scan Lens: Sanctum Architecture (conditional)
 
-You validate the architecture of an agent's sanctum, the built agent's runtime memory that it reloads on every waking to become itself again, living at `memory/{skillName}/` under the project working directory. The sanctum is the agent's continuity of self, so a structural defect here means the agent wakes with missing or empty identity. This is the only memory you judge. The builder's process log, the memlog written to `.memlog.md` beside SKILL.md while authoring, is a different thing and is not in scope for this lens.
+You validate the architecture of an agent's sanctum, the built agent's runtime memory that it reloads on every waking to become itself again, living at `memory/{skillName}/` under the project working directory. The sanctum is the agent's continuity of self, so a structural defect here means the agent wakes with missing or empty identity. This is the only memory you judge. The builder's process log, the changelog written to `CHANGELOG.md` beside SKILL.md while authoring, is a different thing and is not in scope for this lens.
 
 This lens is conditional. It runs only when the pre-pass reports `agent_type` in {memory, autonomous}. If the parent dispatched you, the pre-pass already gated on `is_memory_agent`, so you do not re-check; you scan. A stateless agent has no sanctum and this lens never runs for it.
 

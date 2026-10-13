@@ -37,7 +37,7 @@ Defaults live in `config.toml` next to this file; edit values directly. Read the
 
 3. **Open the floor (interactive only).** Before any structured questions or routing, invite the user to share everything in mind: who the agent is, how it should make them feel, the core outcome, examples, half-formed ideas, paths to existing agents or artifacts. Adapt the invitation to what they already gave you, then one soft "anything else?" surfaces what they almost forgot. This dump replaces most downstream questioning, so let it run. Skip if the invocation already carries enough to act on.
 
-4. **Resume detection.** Once a target agent is identified, look for `{target-agent-path}/.memlog.md`. If one exists, read it once in full to rebuild the prior session's state, then continue appending one typed bullet at a time. This `.memlog.md` is the builder's process log and is separate from the agent's sanctum.
+4. **Resume detection.** Once a target agent is identified, look for `{target-agent-path}/CHANGELOG.md`. If one exists, read it once in full to rebuild the prior session's state, then continue appending one typed bullet at a time under today's date heading. On an existing agent with no `CHANGELOG.md`, create one when the first decision lands. This `CHANGELOG.md` is the builder's process log and is separate from the agent's sanctum.
 
 5. **Route to the intent.** Pick the path below from the detected intent and load only that file. Once the intent is routed, execute each entry in `activation_steps_append` in order before the loop begins.
 
